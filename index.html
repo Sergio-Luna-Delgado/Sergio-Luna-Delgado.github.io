@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergio Luna</title>
+    <meta name="description" content="On this website I talk about myself and my work">
+    <link rel="icon" type="image/svg" href="/build/img/moon.svg">
+    <!--CSS - Bootstrap-->
+    <link rel="preload" href="/build/css/bootstrap.min.css" as="style">
+    <link rel="stylesheet" href="/build/css/bootstrap.min.css">
+    <!--CSS -->
+    <link rel="preload" href="/build/css/app.css" as="style">
+    <link rel="stylesheet" href="/build/css/app.css">
+    <!--Fuente Open Sans y PT Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <span id="Inicio"></span>
+    <header class="container-fluid p-0">
+        <div class="header">
+            <a href="/">
+                <h2 id="b">Sergio Luna</h2>
+            </a>
+            <!-- Cuando la pantalla sea mas grande que una tablet (768px) desaparecera esta seccion -->
+            <div class="mobile-menu">
+                <a data-bs-toggle="dropdown" aria-expanded="false"><img src="/build/img/list.svg" alt="Icono menu"></a>
+                <ul class="dropdown-menu">
+                    <li class="navegacionMovil"><a class="dropdown-item fs-1 px-5" href="#Inicio">Inicio</a></li>
+                    <li class="navegacionMovil"><a class="dropdown-item fs-1 px-5" href="#Sobre_Mi">Sobre mi</a></li>
+                    <li class="navegacionMovil"><a class="dropdown-item fs-1 px-5" href="#Servicios">Servicios</a></li>
+                    <li class="navegacionMovil"><a class="dropdown-item fs-1 px-5" href="#Portafolio">Portafolio</a></li>
+                    <li class="navegacionMovil"><a class="dropdown-item fs-1 px-5" href="#Contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- Cuando la pantalla sea mas pequeña que una tablet desaparecera esta seccion -->
+            <nav class="navegacion">
+                <a href="#Inicio">Inicio</a>
+                <a href="#Sobre_Mi">Sobre mi</a>
+                <a href="#Servicios">Servicios</a>
+                <a href="#Portafolio">Portafolio</a>
+                <a href="#Contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="subir">
+        <a href="#Inicio"><img src="/build/img/up.svg" alt="Arriba"></a>
+    </div>
+    
+    <section class="container-fluid p-0">
+        <div class="hero">
+            <div class="contenido-hero">
+                <picture>
+                    <source src="build/img/me.avif" type="image/avif">
+                    <source src="build/img/me.webp" type="image/webp">
+                    <img loading="lazy" src="build/img/me.png" alt="Foto de perfil">
+                </picture>
+                <div>
+                    <h1>Sergio Luna</h1>
+                    <p>Ingeniero Administrador en Sistemas</p>
+                    <div align="center"><a href="#Contacto" class="btn btn-primary px-4 py-2 fs-2 my-4">Contácteme aquí</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <span id="Sobre_Mi"></span>
+
+    <section class="container my-5">
+        <div class="primeraSeccion">
+            <div class="sobreMi">
+                <h3 class="my-5">Sobre mí</h3>
+                <p>Estoy profundamente comprometido con la calidad de mi trabajo y me esfuerzo por crear soluciones innovadoras que satisfagan las necesidades de mis clientes. Estoy constantemente buscando nuevas tecnologías y técnicas para mejorar mis habilidades.</p>
+                <p>Si quieres conocer más sobre mi revisa mi curriculum en el siguiente enlace:</p>
+                <a href="/docs/CV.pdf" target="__blank" class="btn btn-primary px-4 py-2 fs-2 my-4">Descargar CV</a>
+            </div>
+            <div>
+                <h3 class="my-5">Mis Habilidades</h3>
+                <div class="iconosGrid">
+                    <div class="iconosHabilidades">
+                        <img src="/build/img/html.svg" alt="HTML">
+                    </div>
+                    <div class="iconosHabilidades">
+                        <img src="/build/img/css.svg" alt="CSS">
+                    </div>
+                    <div class="iconosHabilidades">
+                        <img src="/build/img/scss.svg" alt="SCSS">
+                    </div>
+                    <div class="iconosHabilidades">
+                        <img src="/build/img/bootstrap.svg" alt="Bootstrap">
+                    </div>
+                    <div class="iconosHabilidades">
+                        <img src="/build/img/js.svg" alt="JS">
+                    </div>
+                    <div class="iconosHabilidades">
+                        <img src="/build/img/jquery.svg" alt="Jquery">
+                    </div>
+                    <div class="iconosHabilidades">
+                        <img src="/build/img/gulp.svg" alt="Gulp" style="width: 7rem !important;">
+                    </div>
+                    <div class="iconosHabilidades">
+                        <img src="/build/img/php.svg" alt="PHP">
+                    </div>
+                    <div class="iconosHabilidades">
+                        <img src="/build/img/sql.svg" alt="SQL">
+                    </div>
+                    <div class="iconosHabilidades">
+                        <img src="/build/img/vs.svg" alt="VS">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <span id="Servicios"></span>
+
+    <section class="container marginTop">
+        <h3 class="my-5">Mis Servicios</h3>
+        <div class="segundaSeccion">
+            <div>
+                <img src="/build/img/frontend.svg" alt="frontend">
+                <h4>Trabajos de Frontend</h4>
+                <p>Crear validaciones en formularios, diseñar interfaces estáticas/dinamias responsivas y lógica por
+                    parte del cliente.</p>
+            </div>
+            <div>
+                <img src="/build/img/backend.svg" alt="Backend">
+                <h4>Trabajos de Backend</h4>
+                <p>Manejo de la seguridad para la protección de inyecciones SQL, rendimiento de las paginas web y lógica
+                    por parte del servidor.</p>
+            </div>
+            <div>
+                <img src="/build/img/database.svg" alt="Base de datos">
+                <h4>Base de Datos</h4>
+                <p>Tareas básicas CRUD y conocimiento de SQL avanzado para crear vistas, procedimientos, funciones y
+                    cursores.</p>
+            </div>
+        </div>
+    </section>
+
+    <span id="Portafolio"></span>
+
+    <section class="container marginTop">
+        <h3 class="my-5">Portafolio</h3>
+        <div class="terceraSeccion">
+            <div>
+                <figure>
+                    <!-- <img src="/build/img/snack.png" class="proyecto" alt="Proyecto"> -->
+                    <picture>
+                        <source src="/build/img/Alitas.avif" type="image/avif">
+                        <source src="/build/img/Alitas.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/Alitas.png" class="proyecto" alt="Alitas">
+                    </picture>
+                    <div class="info">
+                        <h5>Sitio web para restaurante de alitas</h5>
+                        <p>PHP - SCSS - JS - Jquery - MySQL</p>
+                        <div class="d-flex gap-5">
+                            <a href="https://alitas-legendarias.herokuapp.com/" target="_blank"><img src="/build/img/globe.svg" alt="Pagina Web"></a>
+                            <a href="/snack.html" target="_blank"><img src="/build/img/gallery.svg" alt="Pagina Web"></a>
+                            <a href="https://github.com/Sergio-Luna-Delgado/Proyecto-Alitas" target="_blank"><img src="/build/img/github-white.svg" alt="Repositorio"></a>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <!-- <img src="/build/img/snack.png" class="proyecto" alt="Proyecto"> -->
+                    <picture>
+                        <source src="/build/img/snack.avif" type="image/avif">
+                        <source src="/build/img/snack.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/snack.png" class="proyecto" alt="snack">
+                    </picture>
+                    <div class="info">
+                        <h5>E-commerce hecho a un puesto de comida snack</h5>
+                        <p>PHP - SCSS - JS - Jquery - MySQL</p>
+                        <div class="d-flex gap-5">
+                            <a href="https://quiet-sierra-21959.herokuapp.com/" target="_blank"><img src="/build/img/globe.svg" alt="Pagina Web"></a>
+                            <a href="https://github.com/SergioLunaDelgado/Proyecto-Johnnys-FM" target="_blank"><img src="/build/img/github-white.svg" alt="Repositorio"></a>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <!-- <img src="/build/img/bienes.png" class="proyecto" alt="Proyecto"> -->
+                    <picture>
+                        <source src="/build/img/bienes.avif" type="image/avif">
+                        <source src="/build/img/bienes.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/bienes.png" class="proyecto" alt="bienes">
+                    </picture>
+                    <div class="info">
+                        <h5>CRUD sobre un negocio de bienes raices</h5>
+                        <p>PHP - POO - SCSS - JS - MySQL</p>
+                        <div class="d-flex gap-5">
+                            <a href="/bienesraices.html" target="_blank"><img src="/build/img/gallery.svg" alt="Pagina Web"></a>
+                            <a href="https://github.com/SergioLunaDelgado/Proyecto-Bienes-Raices" target="_blank"><img src="/build/img/github-white.svg" alt="Repositorio"></a>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <!-- <img src="/build/img/festival.png" class="proyecto" alt="Proyecto"> -->
+                    <picture>
+                        <source src="/build/img/festival.avif" type="image/avif">
+                        <source src="/build/img/festival.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/festival.png" class="proyecto" alt="festival">
+                    </picture>
+                    <div class="info">
+                        <h5>Proyecto sobre un festival musical</h5>
+                        <p>HTML - SCSS - JS</p>
+                        <div class="d-flex gap-5">
+                            <a href="https://sergioluna-festival.netlify.app/" target="_blank"><img src="/build/img/globe.svg" alt="Pagina Web"></a>
+                            <a href="https://github.com/SergioLunaDelgado/Proyecto-Festival" target="_blank"><img src="/build/img/github-white.svg" alt="Repositorio"></a>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <!-- <img src="/build/img/cafe.png" class="proyecto" alt="Proyecto"> -->
+                    <picture>
+                        <source src="/build/img/cafe.avif" type="image/avif">
+                        <source src="/build/img/cafe.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/cafe.png" class="proyecto" alt="cafe">
+                    </picture>
+                    <div class="info">
+                        <h5>Tienda de Café</h5>
+                        <p>HTML - CSS</p>
+                        <div class="d-flex gap-5">
+                            <a href="https://sergioluna-cafe.netlify.app/" target="_blank"><img src="/build/img/globe.svg" alt="Pagina Web"></a>
+                            <a href="https://github.com/SergioLunaDelgado/Proyecto-Cafe" target="_blank"><img src="/build/img/github-white.svg" alt="Repositorio"></a>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <!-- <img src="/build/img/21.png" class="proyecto" alt="Proyecto"> -->
+                    <picture>
+                        <source src="/build/img/21.avif" type="image/avif">
+                        <source src="/build/img/21.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/21.png" class="proyecto" alt="21">
+                    </picture>
+                    <div class="info">
+                        <h5>BlackJack</h5>
+                        <p>HTML - CSS - JS</p>
+                        <div class="d-flex gap-5">
+                            <a href="https://sergioluna-blackjack.netlify.app/" target="_blank"><img src="/build/img/globe.svg" alt="Pagina Web"></a>
+                            <a href="https://github.com/SergioLunaDelgado/Proyecto-BlackJack" target="_blank"><img src="/build/img/github-white.svg" alt="Repositorio"></a>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <span id="Contacto"></span>
+
+    <section class="container marginTop">
+        <div class="cuartaSeccion">
+            <div>
+                <h4>Puedes contactarme por medio de este formulario.</h4>
+                <p>Daré mi mejor esfuerzo para aprender, aportar valor y que tengamos una beneficiosa relación a largo plazo.</p>
+            </div>
+            <div>
+                <form name="contacto" method="POST" action="http://formspree.io/sergio.lunadl@uanl.edu.mx">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    <input type="email" name="email" id="email" placeholder="Correo Electronico" required>
+                    <textarea name="mensaje" id="mensaje" placeholder="Mensaje" required></textarea>
+                    <input type="submit" value="Enviar" class="btn btn-primary px-4 py-2 fs-2 my-4">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid p-0 final">
+        <h4 class="my-5">Contáctame :)</h4>
+        <p>O también puedes buscarme en mis otros perfiles</p>
+        <div class="iconosFlex">
+            <div class="iconosFooter">
+                <a href="https://github.com/SergioLunaDelgado" target="__blank"><img src="/build/img/github.svg"></a>
+            </div>
+            <div class="iconosFooter">
+                <a href="https://www.linkedin.com/in/sergio-luna-delgado/" target="__blank"><img src="/build/img/linkedin.svg"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--JS - Bootstrap-->
+    <script src="/build/js/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
+    <script src="/build/js/app.js"></script>
+</body>
+
+</html>
