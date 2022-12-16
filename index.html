@@ -19,6 +19,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
         rel="stylesheet">
+    <!-- Cargar una imagen rapido -->
+    <link rel="preload" href="build/img/me.avif" as="image">
 </head>
 
 <body>
@@ -26,16 +28,19 @@
     <header class="container-fluid p-0">
         <div class="header">
             <a href="/">
-                <h2 id="b">Sergio Luna</h2>
+                <h1>Sergio Luna</h1>
             </a>
             <!-- Cuando la pantalla sea mas grande que una tablet (768px) desaparecera esta seccion -->
             <div class="mobile-menu">
-                <a data-bs-toggle="dropdown" aria-expanded="false"><img src="/build/img/list.svg" alt="Icono menu"></a>
+                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="/build/img/list.svg" alt="Icono menu">
+                </a>
                 <ul class="dropdown-menu">
                     <li class="navegacionMovil"><a class="dropdown-item fs-1 px-5" href="#Inicio">Inicio</a></li>
                     <li class="navegacionMovil"><a class="dropdown-item fs-1 px-5" href="#Sobre_Mi">Sobre mi</a></li>
                     <li class="navegacionMovil"><a class="dropdown-item fs-1 px-5" href="#Servicios">Servicios</a></li>
-                    <li class="navegacionMovil"><a class="dropdown-item fs-1 px-5" href="#Portafolio">Portafolio</a></li>
+                    <li class="navegacionMovil"><a class="dropdown-item fs-1 px-5" href="#Portafolio">Portafolio</a>
+                    </li>
                     <li class="navegacionMovil"><a class="dropdown-item fs-1 px-5" href="#Contacto">Contacto</a></li>
                 </ul>
             </div>
@@ -53,36 +58,40 @@
     <div class="subir">
         <a href="#Inicio"><img src="/build/img/up.svg" alt="Arriba"></a>
     </div>
-    
+
     <section class="container-fluid p-0">
         <div class="hero">
             <div class="contenido-hero">
                 <picture>
-                    <source src="build/img/me.avif" type="image/avif">
-                    <source src="build/img/me.webp" type="image/webp">
+                    <source srcset="build/img/me.avif" type="image/avif">
+                    <source srcset="build/img/me.webp" type="image/webp">
                     <img loading="lazy" src="build/img/me.png" alt="Foto de perfil">
                 </picture>
                 <div>
                     <h1>Sergio Luna</h1>
                     <p>Ingeniero Administrador en Sistemas</p>
-                    <div align="center"><a href="#Contacto" class="btn btn-primary px-4 py-2 fs-2 my-4">Contácteme aquí</a></div>
+                    <div align="center"><a href="#Contacto" class="btn btn-primary px-4 py-2 fs-2 my-4">Contácteme
+                            aquí</a></div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <span id="Sobre_Mi"></span>
 
     <section class="container my-5">
         <div class="primeraSeccion">
             <div class="sobreMi">
-                <h3 class="my-5">Sobre mí</h3>
-                <p>Estoy profundamente comprometido con la calidad de mi trabajo y me esfuerzo por crear soluciones innovadoras que satisfagan las necesidades de mis clientes. Estoy constantemente buscando nuevas tecnologías y técnicas para mejorar mis habilidades.</p>
+                <h2 class="my-5">Sobre mí</h2>
+                <p>Estoy profundamente comprometido con la calidad de mi trabajo y me esfuerzo por crear soluciones
+                    innovadoras que satisfagan las necesidades de mis clientes. Estoy constantemente buscando nuevas
+                    tecnologías y técnicas para mejorar mis habilidades.</p>
                 <p>Si quieres conocer más sobre mi revisa mi curriculum en el siguiente enlace:</p>
                 <a href="/docs/CV.pdf" target="__blank" class="btn btn-primary px-4 py-2 fs-2 my-4">Descargar CV</a>
             </div>
             <div>
-                <h3 class="my-5">Mis Habilidades</h3>
+                <h2 class="my-5">Mis Habilidades</h2>
                 <div class="iconosGrid">
                     <div class="iconosHabilidades">
                         <img src="/build/img/html.svg" alt="HTML">
@@ -112,7 +121,7 @@
                         <img src="/build/img/sql.svg" alt="SQL">
                     </div>
                     <div class="iconosHabilidades">
-                        <img src="/build/img/vs.svg" alt="VS">
+                        <img src="/build/img/github.svg" alt="Github">
                     </div>
                 </div>
             </div>
@@ -122,23 +131,23 @@
     <span id="Servicios"></span>
 
     <section class="container marginTop">
-        <h3 class="my-5">Mis Servicios</h3>
+        <h2 class="my-5">Mis Servicios</h2>
         <div class="segundaSeccion">
             <div>
                 <img src="/build/img/frontend.svg" alt="frontend">
-                <h4>Trabajos de Frontend</h4>
+                <h3 class="text-black">Trabajos de Frontend</h3>
                 <p>Crear validaciones en formularios, diseñar interfaces estáticas/dinamias responsivas y lógica por
                     parte del cliente.</p>
             </div>
             <div>
                 <img src="/build/img/backend.svg" alt="Backend">
-                <h4>Trabajos de Backend</h4>
+                <h3 class="text-black">Trabajos de Backend</h3>
                 <p>Manejo de la seguridad para la protección de inyecciones SQL, rendimiento de las paginas web y lógica
                     por parte del servidor.</p>
             </div>
             <div>
                 <img src="/build/img/database.svg" alt="Base de datos">
-                <h4>Base de Datos</h4>
+                <h3 class="text-black">Base de Datos</h3>
                 <p>Tareas básicas CRUD y conocimiento de SQL avanzado para crear vistas, procedimientos, funciones y
                     cursores.</p>
             </div>
@@ -148,112 +157,118 @@
     <span id="Portafolio"></span>
 
     <section class="container marginTop">
-        <h3 class="my-5">Portafolio</h3>
+        <h2 class="my-5">Portafolio</h2>
         <div class="terceraSeccion">
             <div>
                 <figure>
-                    <!-- <img src="/build/img/snack.png" class="proyecto" alt="Proyecto"> -->
                     <picture>
-                        <source src="/build/img/Alitas.avif" type="image/avif">
-                        <source src="/build/img/Alitas.webp" type="image/webp">
+                        <source srcset="/build/img/Alitas.avif" type="image/avif">
+                        <source srcset="/build/img/Alitas.webp" type="image/webp">
                         <img loading="lazy" src="/build/img/Alitas.png" class="proyecto" alt="Alitas">
                     </picture>
                     <div class="info">
-                        <h5>Sitio web para restaurante de alitas</h5>
+                        <h3>Sitio web para el comercio de un restaurante de alitas</h3>
                         <p>PHP - SCSS - JS - Jquery - MySQL</p>
                         <div class="d-flex gap-5">
-                            <a href="https://alitas-legendarias.herokuapp.com/" target="_blank"><img src="/build/img/globe.svg" alt="Pagina Web"></a>
-                            <a href="https://github.com/Sergio-Luna-Delgado/Proyecto-Alitas" target="_blank"><img src="/build/img/github-white.svg" alt="Repositorio"></a>
+                            <a href="https://alitas-legendarias.herokuapp.com/" target="_blank"><img
+                                    src="/build/img/globe.svg" alt="Pagina Web"></a>
+                            <a href="https://github.com/Sergio-Luna-Delgado/Proyecto-Alitas" target="_blank"><img
+                                    src="/build/img/github-white.svg" alt="Repositorio"></a>
                         </div>
                     </div>
                 </figure>
             </div>
             <div>
                 <figure>
-                    <!-- <img src="/build/img/snack.png" class="proyecto" alt="Proyecto"> -->
                     <picture>
-                        <source src="/build/img/snack.avif" type="image/avif">
-                        <source src="/build/img/snack.webp" type="image/webp">
+                        <source srcset="/build/img/snack.avif" type="image/avif">
+                        <source srcset="/build/img/snack.webp" type="image/webp">
                         <img loading="lazy" src="/build/img/snack.png" class="proyecto" alt="snack">
                     </picture>
                     <div class="info">
-                        <h5>E-commerce hecho a un puesto de comida snack</h5>
+                        <h3>E-commerce hecho a un puesto de comida snack</h3>
                         <p>PHP - SCSS - JS - Jquery - MySQL</p>
                         <div class="d-flex gap-5">
-                            <a href="https://quiet-sierra-21959.herokuapp.com/" target="_blank"><img src="/build/img/globe.svg" alt="Pagina Web"></a>
-                            <a href="https://github.com/SergioLunaDelgado/Proyecto-Johnnys-FM" target="_blank"><img src="/build/img/github-white.svg" alt="Repositorio"></a>
+                            <a href="https://johnnys-fm.herokuapp.com/" target="_blank"><img src="/build/img/globe.svg"
+                                    alt="Pagina Web"></a>
+                            <a href="https://github.com/Sergio-Luna-Delgado/Proyecto-Johnnys" target="_blank"><img
+                                    src="/build/img/github-white.svg" alt="Repositorio"></a>
                         </div>
                     </div>
                 </figure>
             </div>
             <div>
                 <figure>
-                    <!-- <img src="/build/img/bienes.png" class="proyecto" alt="Proyecto"> -->
                     <picture>
-                        <source src="/build/img/bienes.avif" type="image/avif">
-                        <source src="/build/img/bienes.webp" type="image/webp">
+                        <source srcset="/build/img/bienes.avif" type="image/avif">
+                        <source srcset="/build/img/bienes.webp" type="image/webp">
                         <img loading="lazy" src="/build/img/bienes.png" class="proyecto" alt="bienes">
                     </picture>
                     <div class="info">
-                        <h5>CRUD sobre un negocio de bienes raices</h5>
+                        <h3>CRUD sobre un negocio de bienes raices</h3>
                         <p>PHP - POO - SCSS - JS - MySQL</p>
                         <div class="d-flex gap-5">
-                            <a href="/bienesraices.html" target="_blank"><img src="/build/img/gallery.svg" alt="Pagina Web"></a>
-                            <a href="https://github.com/SergioLunaDelgado/Proyecto-Bienes-Raices" target="_blank"><img src="/build/img/github-white.svg" alt="Repositorio"></a>
+                            <a href="/bienesraices.html" target="_blank"><img src="/build/img/gallery.svg"
+                                    alt="Pagina Web"></a>
+                            <a href="https://github.com/SergioLunaDelgado/Proyecto-Bienes-Raices" target="_blank"><img
+                                    src="/build/img/github-white.svg" alt="Repositorio"></a>
                         </div>
                     </div>
                 </figure>
             </div>
             <div>
                 <figure>
-                    <!-- <img src="/build/img/festival.png" class="proyecto" alt="Proyecto"> -->
                     <picture>
-                        <source src="/build/img/festival.avif" type="image/avif">
-                        <source src="/build/img/festival.webp" type="image/webp">
+                        <source srcset="/build/img/festival.avif" type="image/avif">
+                        <source srcset="/build/img/festival.webp" type="image/webp">
                         <img loading="lazy" src="/build/img/festival.png" class="proyecto" alt="festival">
                     </picture>
                     <div class="info">
-                        <h5>Proyecto sobre un festival musical</h5>
+                        <h3>Proyecto sobre un festival musical</h3>
                         <p>HTML - SCSS - JS</p>
                         <div class="d-flex gap-5">
-                            <a href="https://sergioluna-festival.netlify.app/" target="_blank"><img src="/build/img/globe.svg" alt="Pagina Web"></a>
-                            <a href="https://github.com/SergioLunaDelgado/Proyecto-Festival" target="_blank"><img src="/build/img/github-white.svg" alt="Repositorio"></a>
+                            <a href="https://sergioluna-festival.netlify.app/" target="_blank"><img
+                                    src="/build/img/globe.svg" alt="Pagina Web"></a>
+                            <a href="https://github.com/SergioLunaDelgado/Proyecto-Festival" target="_blank"><img
+                                    src="/build/img/github-white.svg" alt="Repositorio"></a>
                         </div>
                     </div>
                 </figure>
             </div>
             <div>
                 <figure>
-                    <!-- <img src="/build/img/cafe.png" class="proyecto" alt="Proyecto"> -->
                     <picture>
-                        <source src="/build/img/cafe.avif" type="image/avif">
-                        <source src="/build/img/cafe.webp" type="image/webp">
+                        <source srcset="/build/img/cafe.avif" type="image/avif">
+                        <source srcset="/build/img/cafe.webp" type="image/webp">
                         <img loading="lazy" src="/build/img/cafe.png" class="proyecto" alt="cafe">
                     </picture>
                     <div class="info">
-                        <h5>Tienda de Café</h5>
+                        <h3>Tienda de Café</h3>
                         <p>HTML - CSS</p>
                         <div class="d-flex gap-5">
-                            <a href="https://sergioluna-cafe.netlify.app/" target="_blank"><img src="/build/img/globe.svg" alt="Pagina Web"></a>
-                            <a href="https://github.com/SergioLunaDelgado/Proyecto-Cafe" target="_blank"><img src="/build/img/github-white.svg" alt="Repositorio"></a>
+                            <a href="https://sergioluna-cafe.netlify.app/" target="_blank"><img
+                                    src="/build/img/globe.svg" alt="Pagina Web"></a>
+                            <a href="https://github.com/SergioLunaDelgado/Proyecto-Cafe" target="_blank"><img
+                                    src="/build/img/github-white.svg" alt="Repositorio"></a>
                         </div>
                     </div>
                 </figure>
             </div>
             <div>
                 <figure>
-                    <!-- <img src="/build/img/21.png" class="proyecto" alt="Proyecto"> -->
                     <picture>
-                        <source src="/build/img/21.avif" type="image/avif">
-                        <source src="/build/img/21.webp" type="image/webp">
+                        <source srcset="/build/img/21.avif" type="image/avif">
+                        <source srcset="/build/img/21.webp" type="image/webp">
                         <img loading="lazy" src="/build/img/21.png" class="proyecto" alt="21">
                     </picture>
                     <div class="info">
-                        <h5>BlackJack</h5>
+                        <h3>BlackJack</h3>
                         <p>HTML - CSS - JS</p>
                         <div class="d-flex gap-5">
-                            <a href="https://sergioluna-blackjack.netlify.app/" target="_blank"><img src="/build/img/globe.svg" alt="Pagina Web"></a>
-                            <a href="https://github.com/SergioLunaDelgado/Proyecto-BlackJack" target="_blank"><img src="/build/img/github-white.svg" alt="Repositorio"></a>
+                            <a href="https://sergioluna-blackjack.netlify.app/" target="_blank"><img
+                                    src="/build/img/globe.svg" alt="Pagina Web"></a>
+                            <a href="https://github.com/SergioLunaDelgado/Proyecto-BlackJack" target="_blank"><img
+                                    src="/build/img/github-white.svg" alt="Repositorio"></a>
                         </div>
                     </div>
                 </figure>
@@ -266,8 +281,9 @@
     <section class="container marginTop">
         <div class="cuartaSeccion">
             <div>
-                <h4>Puedes contactarme por medio de este formulario.</h4>
-                <p>Daré mi mejor esfuerzo para aprender, aportar valor y que tengamos una beneficiosa relación a largo plazo.</p>
+                <h2>Puedes contactarme por medio de este formulario.</h2>
+                <p>Daré mi mejor esfuerzo para aprender, aportar valor y que tengamos una beneficiosa relación a largo
+                    plazo.</p>
             </div>
             <div>
                 <form name="contacto" method="POST" action="https://formspree.io/f/mnqrepwv">
@@ -281,14 +297,16 @@
     </section>
 
     <footer class="container-fluid p-0 final">
-        <h4 class="my-5">Contáctame :)</h4>
+        <h2 class="my-5">Contáctame :)</h2>
         <p>O también puedes buscarme en mis otros perfiles</p>
         <div class="iconosFlex">
             <div class="iconosFooter">
-                <a href="https://github.com/SergioLunaDelgado" target="__blank"><img src="/build/img/github.svg"></a>
+                <a href="https://github.com/SergioLunaDelgado" target="__blank"><img src="/build/img/github.svg"
+                        alt="Github logo"></a>
             </div>
             <div class="iconosFooter">
-                <a href="https://www.linkedin.com/in/sergio-luna-delgado/" target="__blank"><img src="/build/img/linkedin.svg"></a>
+                <a href="https://www.linkedin.com/in/sergio-luna-delgado/" target="__blank"><img
+                        src="/build/img/linkedin.svg" alt="LinkedIn logo"></a>
             </div>
         </div>
     </footer>
