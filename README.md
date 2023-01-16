@@ -9,7 +9,7 @@
 ## Pagina Web
 * [X] Comprar un dominio
 * [X] Buscar alternativa a heroku (antes del 25 de nov)
-* [ ] Agregar animaciones
+* [X] Agregar animaciones
 * [ ] Eliminar html johnnys y bienes raicies tambien css y las 10 imagenes
 
 ## Github

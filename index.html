@@ -8,6 +8,8 @@
     <title>Sergio Luna</title>
     <meta name="description" content="On this website I talk about myself and my work">
     <link rel="icon" type="image/svg" href="/build/img/moon.svg">
+    <!-- CSS - AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--CSS - Bootstrap-->
     <link rel="preload" href="/build/css/bootstrap.min.css" as="style">
     <link rel="stylesheet" href="/build/css/bootstrap.min.css">
@@ -83,15 +85,16 @@
 
     <section class="container my-5">
         <div class="primeraSeccion">
-            <div class="sobreMi">
+            <div class="sobreMi" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
                 <h2 class="my-5">Sobre mí</h2>
                 <p>Estoy profundamente comprometido con la calidad de mi trabajo y me esfuerzo por crear soluciones
                     innovadoras que satisfagan las necesidades de mis clientes. Estoy constantemente buscando nuevas
                     tecnologías y técnicas para mejorar mis habilidades.</p>
                 <p>Si quieres conocer más sobre mi revisa mi curriculum en el siguiente enlace:</p>
-                <a href="/docs/CV.pdf" target="__blank" class="btn btn-primary px-4 py-2 fs-2 my-4">Descargar CV</a>
+                <a href="/docs/CV.pdf" rel="noopener noreferrer" target="_blank"
+                    class="btn btn-primary px-4 py-2 fs-2 my-4">Descargar CV</a>
             </div>
-            <div>
+            <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
                 <h2 class="my-5">Mis Habilidades</h2>
                 <div class="iconosGrid">
                     <div class="iconosHabilidades">
@@ -104,13 +107,13 @@
                         <img src="/build/img/scss.svg" alt="SCSS">
                     </div>
                     <div class="iconosHabilidades">
-                        <img src="/build/img/bootstrap.svg" alt="Bootstrap">
+                        <img src="/build/img/bootstrap.svg" title="Bootstrap" alt="Bootstrap">
                     </div>
                     <div class="iconosHabilidades">
                         <img src="/build/img/js.svg" alt="JS">
                     </div>
                     <div class="iconosHabilidades">
-                        <img src="/build/img/jquery.svg" alt="Jquery">
+                        <img src="/build/img/jquery.svg" title="Jquery" alt="Jquery">
                     </div>
                     <div class="iconosHabilidades">
                         <img src="/build/img/gulp.svg" alt="Gulp" style="width: 7rem !important;">
@@ -122,7 +125,7 @@
                         <img src="/build/img/sql.svg" alt="SQL">
                     </div>
                     <div class="iconosHabilidades">
-                        <img src="/build/img/github.svg" alt="Github">
+                        <img src="/build/img/github.svg" title="Github" alt="Github">
                     </div>
                 </div>
             </div>
@@ -131,7 +134,7 @@
 
     <span id="Servicios"></span>
 
-    <section class="container marginTop">
+    <section class="container marginTop" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <h2 class="my-5">Mis Servicios</h2>
         <div class="segundaSeccion">
             <div>
@@ -157,7 +160,7 @@
 
     <span id="Portafolio"></span>
 
-    <section class="container marginTop">
+    <section class="container marginTop" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <h2 class="my-5">Portafolio</h2>
         <div class="terceraSeccion">
             <div>
@@ -279,7 +282,7 @@
 
     <span id="Contacto"></span>
 
-    <section class="container marginTop">
+    <section class="container marginTop" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <div class="cuartaSeccion">
             <div>
                 <h2>Puedes contactarme por medio de este formulario.</h2>
@@ -302,18 +305,23 @@
         <p>O también puedes buscarme en mis otros perfiles</p>
         <div class="iconosFlex">
             <div class="iconosFooter">
-                <a href="https://github.com/SergioLunaDelgado" target="__blank"><img src="/build/img/github.svg"
-                        alt="Github logo"></a>
+                <a href="https://github.com/SergioLunaDelgado" rel="noopener noreferrer" target="_blank"><img
+                        src="/build/img/github.svg" alt="Github logo"></a>
             </div>
             <div class="iconosFooter">
-                <a href="https://www.linkedin.com/in/sergio-luna-delgado/" target="__blank"><img
-                        src="/build/img/linkedin.svg" alt="LinkedIn logo"></a>
+                <a href="https://www.linkedin.com/in/sergio-luna-delgado/" rel="noopener noreferrer"
+                    target="_blank"><img src="/build/img/linkedin.svg" alt="LinkedIn logo"></a>
             </div>
         </div>
     </footer>
 
     <!--JS - Bootstrap-->
     <script src="/build/js/bootstrap.bundle.min.js"></script>
+    <!-- JS - AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- JS -->
     <script src="/build/js/app.js"></script>
 </body>
