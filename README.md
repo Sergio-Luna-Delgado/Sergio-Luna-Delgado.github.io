@@ -1,22 +1,20 @@
-# :clipboard:
+# Mi Portafolio
 
-## General :globe_with_meridians:
-* [ ] Crear una "rueda" entre los 3 enlaces (pagina web, github y linkedin)
-* [ ] Si se requiere cambiar o actualizar descripciones
-* [ ] Aprender inglés
-* [ ] Hacer practicas enfocado al desarollo web
-
-## Pagina Web
-* [X] Comprar un dominio
-* [X] Buscar alternativa a heroku (antes del 25 de nov)
-* [X] Agregar animaciones
-* [ ] Eliminar html johnnys y bienes raicies tambien css y las 10 imagenes
-
-## Github
-* [X] Agregar README a los proyectos
-
-## LinkedIn
-* [ ] Actualizar foto
-* [ ] Aptitudes
-* [ ] Experiencia
-* [ ] Agregar Descripción
+## Secciones de mi sitio web
+1. Hero. 
+    * Foto, nombre, carrera y botón hacia contacto.
+2. Sobre mi. 
+    * Breve descripcion junto con mi CV
+    * Mis 10 habilidades principales
+3. Servicios.
+    * Frontend
+    * Backend
+    * Database
+4. Portafolio
+    * Proyecto Alitas
+    * Proyecto Johnnys
+    * Proyecto BienesRaices
+    * Proyecto Festival
+    * Proyecto Blog
+    * Proyecto BlackJack
+5. Formulario de Contacto
