@@ -19,8 +19,7 @@
     <!--Fuente Open Sans y PT Sans-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!-- Cargar una imagen rapido -->
     <link rel="preload" href="build/img/me.avif" as="image">
 </head>
@@ -73,7 +72,8 @@
                     <h1>Sergio Luna</h1>
                     <p>Ingeniero Administrador en Sistemas</p>
                     <div class="d-flex justify-content-center">
-                        <a href="https://api.whatsapp.com/send?phone=528130885707" rel="noopener noreferrer" target="_blank" class="btn btn-primary px-4 py-2 fs-2 my-4 text-white">
+                        <a href="https://api.whatsapp.com/send?phone=528130885707" rel="noopener noreferrer"
+                            target="_blank" class="btn btn-primary px-4 py-2 fs-2 my-4 text-white">
                             <img src="/build/img/whatsapp-white.svg" alt="Whatsapp logo" class="he">
                             Contáctame
                         </a>
@@ -141,23 +141,101 @@
     <section class="container marginTop" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
         <h2 class="my-5">Mis Servicios</h2>
         <div class="segundaSeccion">
-            <div>
-                <img src="/build/img/frontend.svg" alt="frontend">
-                <h3 class="text-black">Trabajos de Frontend</h3>
-                <p>Crear validaciones en formularios, diseñar interfaces estáticas/dinamias responsivas y lógica por
-                    parte del cliente.</p>
+            <div class="card w-100 mb-5">
+                <div class="card-body">
+                    <h5 class="card-title fs-2 fw-bold pt-3">Landing Page</h5>
+                    <p class="card-text fs-3">Perfecta para pequeños negocios</p>
+                    <p class="card-text primario fw-black pt-1 fs-1">$2,500 MXN <!-- <span class="fs-5 text-black">(Incluye
+                            IVA)</span> --></p>
+                    <div style="overflow: scroll; height: 45rem; overflow-x: hidden;">
+                        <ul class="text-start fs-3">
+                            <li class="pb-2">Diseño atractivo y profesional</li>
+                            <li class="pb-2"><span class="fw-bold">1</span> página</li>
+                            <li class="pb-2">Hasta <span class="fw-bold">16</span> imágenes de stock o proporcionadas por el cliente</li>
+                            <li class="pb-2">Integración a tu número de teléfono o Whatsapp</li>
+                            <li class="pb-2">Vínculo a tus redes sociales</li>
+                            <li class="pb-2">Vinculo a tu ubicacion por medio de un mapa interactivo</li>
+                            <li class="pb-2">Optimización para navegadores (SEO)</li>
+                            <li class="pb-2">Carga rápida del sitio</li>
+                            <li class="pb-2">Formulario de contacto</li>
+                            <li class="">Diseño adaptable en celulares, tablets y computadores</li>
+                        </ul>
+                        <hr>
+                        <ul class="text-start fs-3">
+                            <li class="pb-2">Incluye certificado de seguridad SSL</li>
+                            <li class="pb-2">Incluye dominio (gratis el primer año)</li>
+                            <li class="">Incluye hospedaje (gratis el primer año)</li>
+                        </ul>
+                    </div>
+                    <a href="/servicios/landing-page.html" class="btn btn-primary px-4 py-2 fs-2 my-4">Conocer más</a>
+                </div>
             </div>
-            <div>
-                <img src="/build/img/backend.svg" alt="Backend">
-                <h3 class="text-black">Trabajos de Backend</h3>
-                <p>Manejo de la seguridad para la protección de inyecciones SQL, rendimiento de las paginas web y lógica
-                    por parte del servidor.</p>
+            <div class="card w-100 mb-5 order-first order-md-0">
+                <div class="card-body">
+                    <span
+                        class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger fs-5">Más
+                        vendido</span>
+                    <h5 class="card-title fs-2 fw-bold pt-3">One Page</h5>
+                    <p class="card-text fs-3">Diseño más popular actualmente</p>
+                    <p class="card-text primario fw-black pt-1 fs-1">$5,000 MXN <!-- <span class="fs-5 text-black">(Incluye
+                            IVA)</span> --></p>
+                    <div style="overflow: scroll; height: 45rem; overflow-x: hidden;">
+                        <ul class="text-start fs-3">
+                            <li class="pb-2">Diseño atractivo y profesional</li>
+                            <li class="pb-2">Hasta <span class="fw-bold">5</span> páginas (Ej. Inicio, Nosotros, Servicios, Contacto, Galería ...)</li>
+                            <li class="pb-2">Imágenes de stock o proporcionadas por el cliente <span class="fw-bold">ilimitadas</span></li>
+                            <li class="pb-2">Integración a tu número de teléfono o Whatsapp</li>
+                            <li class="pb-2">Vínculo a tus redes sociales</li>
+                            <li class="pb-2">Vinculo a tu ubicacion por medio de un mapa interactivo</li>
+                            <li class="pb-2">Optimización para navegadores (SEO)</li>
+                            <li class="pb-2">Carga rápida del sitio</li>
+                            <li class="pb-2">Formulario de contacto personalizado</li>
+                            <li class="">Diseño adaptable en celulares, tablets y computadores</li>
+                        </ul>
+                        <hr>
+                        <ul class="text-start fs-3">
+                            <li class="pb-2">Incluye certificado de seguridad SSL</li>
+                            <li class="pb-2">Incluye dominio (gratis el primer año)</li>
+                            <li class="pb-2">Incluye hospedaje (gratis el primer año)</li>
+                            <li class="pb-2">Incluye ayuda para escribir los textos</li>
+                            <li class="">Incluye una revisión de mantenimiento</li>
+                        </ul>
+                    </div>
+                    <a href="/servicios/one-page.html" class="btn btn-primary px-4 py-2 fs-2 my-4">Conocer más</a>
+                </div>
             </div>
-            <div>
-                <img src="/build/img/database.svg" alt="Base de datos">
-                <h3 class="text-black">Base de Datos</h3>
-                <p>Tareas básicas CRUD y conocimiento de SQL avanzado para crear vistas, procedimientos, funciones y
-                    cursores.</p>
+            <div class="card w-100 mb-md-5">
+                <div class="card-body">
+                    <h5 class="card-title fs-2 fw-bold pt-3">Dynamic Page</h5>
+                    <p class="card-text fs-3">Blogs / Noticias / Clases / Avisos</p>
+                    <p class="card-text primario fw-black pt-1 fs-1">$8,000 MXN <!-- <span class="fs-5 text-black">(Incluye
+                            IVA)</span> --></p>
+                    <!-- <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">Más vendido</span> -->
+                    <div style="overflow: scroll; height: 45rem; overflow-x: hidden;">
+                        <ul class="text-start fs-3">
+                            <li class="pb-2">Diseño atractivo y profesional</li>
+                            <li class="pb-2">Hasta <span class="fw-bold">5 páginas dínamicas</span> (Ej. Inicio, Nosotros, Servicios, Contacto, Galería ...)</li>
+                            <li class="pb-2">Panel de administración</li>
+                            <li class="pb-2">Imágenes de stock o proporcionadas por el cliente <span class="fw-bold">ilimitadas</span></li>
+                            <li class="pb-2">Integración <span class="fw-bold">dínamica</span> a tu número de teléfono o Whatsapp</li>
+                            <li class="pb-2">Vínculos <span class="fw-bold">dínamicos</span> a tus redes sociales</li>
+                            <li class="pb-2">Vinculos <span class="fw-bold">dínamicos</span> a tu ubicacion por medio de un mapa interactivo</li>
+                            <li class="pb-2">Optimización para navegadores (SEO)</li>
+                            <li class="pb-2">Carga rápida del sitio</li>
+                            <li class="">Diseño adaptable en celulares, tablets y computadores</li>
+                        </ul>
+                        <hr>
+                        <ul class="text-start fs-3">
+                            <li class="pb-2">Incluye certificado de seguridad SSL</li>
+                            <li class="pb-2">Incluye dominio (gratis el primer año)</li>
+                            <li class="pb-2">Incluye hospedaje (gratis el primer año)</li>
+                            <li class="pb-2">Incluye ayuda para escribir los textos</li>
+                            <li class="pb-2">Incluye una hasta dos revisiones de mantenimiento</li>
+                            <li class="">Hasta <span class="fw-bold">3</span> direcciones de correo electrónico con el nombre de tu empresa</li>
+                        </ul>
+                    </div>
+                    <a href="/servicios/dynamic-page.html" class="btn btn-primary px-4 py-2 fs-2 my-4">Conocer más</a>
+                </div>
             </div>
         </div>
     </section>
@@ -170,13 +248,28 @@
             <div>
                 <figure>
                     <picture>
+                        <source srcset="/build/img/familia.avif" type="image/avif">
+                        <source srcset="/build/img/familia.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/familia.png" class="proyecto" alt="Iglesia Familia de Fe y Amistad">
+                    </picture>
+                    <div class="info">
+                        <h3>Iglesia Familia de Fe y Amistad</h3>
+                        <div class="d-flex gap-5">
+                            <a href="https://familiadefeyamistad.com/" target="_blank"><img
+                                    src="/build/img/globe.svg" alt="Pagina Web"></a>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <picture>
                         <source srcset="/build/img/Alitas.avif" type="image/avif">
                         <source srcset="/build/img/Alitas.webp" type="image/webp">
                         <img loading="lazy" src="/build/img/Alitas.png" class="proyecto" alt="Alitas">
                     </picture>
                     <div class="info">
-                        <h3>Sitio web para el comercio de un restaurante de alitas</h3>
-                        <p>PHP - SCSS - JS - Jquery - MySQL</p>
+                        <h3>Restaurante Alitas Legendarias</h3>
                         <div class="d-flex gap-5">
                             <a href="https://alitas-legendarias.herokuapp.com/" target="_blank"><img
                                     src="/build/img/globe.svg" alt="Pagina Web"></a>
@@ -194,12 +287,29 @@
                         <img loading="lazy" src="/build/img/snack.png" class="proyecto" alt="snack">
                     </picture>
                     <div class="info">
-                        <h3>E-commerce hecho a un puesto de comida snack</h3>
-                        <p>PHP - SCSS - JS - Jquery - MySQL</p>
+                        <h3>Restaurante de comida rápida Johnnys Frappes & More</h3>
                         <div class="d-flex gap-5">
                             <a href="https://johnnys-fm.herokuapp.com/" target="_blank"><img src="/build/img/globe.svg"
                                     alt="Pagina Web"></a>
                             <a href="https://github.com/Sergio-Luna-Delgado/Proyecto-Johnnys" target="_blank"><img
+                                    src="/build/img/github-white.svg" alt="Repositorio"></a>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <picture>
+                        <source srcset="/build/img/cafe.avif" type="image/avif">
+                        <source srcset="/build/img/cafe.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/cafe.png" class="proyecto" alt="cafe">
+                    </picture>
+                    <div class="info">
+                        <h3>Cafeteria y Blog de Café</h3>
+                        <div class="d-flex gap-5">
+                            <a href="https://effulgent-starburst-78c43e.netlify.app/" target="_blank"><img
+                                    src="/build/img/globe.svg" alt="Pagina Web"></a>
+                            <a href="https://github.com/SergioLunaDelgado/Blog-de-Cafe" target="_blank"><img
                                     src="/build/img/github-white.svg" alt="Repositorio"></a>
                         </div>
                     </div>
@@ -213,11 +323,10 @@
                         <img loading="lazy" src="/build/img/bienes.png" class="proyecto" alt="bienes">
                     </picture>
                     <div class="info">
-                        <h3>CRUD sobre un negocio de bienes raices</h3>
-                        <p>PHP - POO - SCSS - JS - MySQL</p>
+                        <h3>Proyecto sobre un negocio de Bienes Raices</h3>
                         <div class="d-flex gap-5">
-                            <a href="https://sergioluna-bienesraices.netlify.app/" target="_blank"><img src="/build/img/globe.svg"
-                                alt="Pagina Web"></a>
+                            <a href="https://sergioluna-bienesraices.netlify.app/" target="_blank"><img
+                                    src="/build/img/globe.svg" alt="Pagina Web"></a>
                             <a href="https://github.com/SergioLunaDelgado/Proyecto-Bienes" target="_blank"><img
                                     src="/build/img/github-white.svg" alt="Repositorio"></a>
                         </div>
@@ -233,49 +342,10 @@
                     </picture>
                     <div class="info">
                         <h3>Proyecto sobre un festival musical</h3>
-                        <p>HTML - SCSS - JS</p>
                         <div class="d-flex gap-5">
                             <a href="https://sergioluna-festival.netlify.app/" target="_blank"><img
                                     src="/build/img/globe.svg" alt="Pagina Web"></a>
                             <a href="https://github.com/SergioLunaDelgado/Proyecto-Festival" target="_blank"><img
-                                    src="/build/img/github-white.svg" alt="Repositorio"></a>
-                        </div>
-                    </div>
-                </figure>
-            </div>
-            <div>
-                <figure>
-                    <picture>
-                        <source srcset="/build/img/cafe.avif" type="image/avif">
-                        <source srcset="/build/img/cafe.webp" type="image/webp">
-                        <img loading="lazy" src="/build/img/cafe.png" class="proyecto" alt="cafe">
-                    </picture>
-                    <div class="info">
-                        <h3>Tienda de Café</h3>
-                        <p>HTML - SCSS - JS</p>
-                        <div class="d-flex gap-5">
-                            <a href="https://effulgent-starburst-78c43e.netlify.app/" target="_blank"><img
-                                    src="/build/img/globe.svg" alt="Pagina Web"></a>
-                            <a href="https://github.com/SergioLunaDelgado/Blog-de-Cafe" target="_blank"><img
-                                    src="/build/img/github-white.svg" alt="Repositorio"></a>
-                        </div>
-                    </div>
-                </figure>
-            </div>
-            <div>
-                <figure>
-                    <picture>
-                        <source srcset="/build/img/21.avif" type="image/avif">
-                        <source srcset="/build/img/21.webp" type="image/webp">
-                        <img loading="lazy" src="/build/img/21.png" class="proyecto" alt="21">
-                    </picture>
-                    <div class="info">
-                        <h3>BlackJack</h3>
-                        <p>HTML - CSS - JS</p>
-                        <div class="d-flex gap-5">
-                            <a href="https://sergioluna-blackjack.netlify.app/" target="_blank"><img
-                                    src="/build/img/globe.svg" alt="Pagina Web"></a>
-                            <a href="https://github.com/SergioLunaDelgado/Proyecto-BlackJack" target="_blank"><img
                                     src="/build/img/github-white.svg" alt="Repositorio"></a>
                         </div>
                     </div>
@@ -296,6 +366,7 @@
             <div>
                 <form name="contacto" method="POST" action="https://formspree.io/f/mnqrepwv">
                     <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Teléfono (opcional)" maxlength="10">
                     <input type="email" name="email" id="email" placeholder="Correo Electronico" required>
                     <textarea name="mensaje" id="mensaje" placeholder="Mensaje" required></textarea>
                     <input type="submit" value="Enviar" class="btn btn-primary px-4 py-2 fs-2 my-4">
@@ -309,8 +380,8 @@
         <p>O también puedes buscarme en mis otros perfiles</p>
         <div class="iconosFlex">
             <div class="iconosFooter">
-                <a href="https://api.whatsapp.com/send?phone=528130885707" rel="noopener noreferrer" target="_blank"><img
-                        src="/build/img/whatsapp.svg" alt="Whatsapp logo"></a>
+                <a href="https://api.whatsapp.com/send?phone=528130885707" rel="noopener noreferrer"
+                    target="_blank"><img src="/build/img/whatsapp.svg" alt="Whatsapp logo"></a>
             </div>
             <div class="iconosFooter">
                 <a href="https://github.com/SergioLunaDelgado" rel="noopener noreferrer" target="_blank"><img
