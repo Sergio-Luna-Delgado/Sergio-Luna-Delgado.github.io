@@ -1,20 +1,28 @@
-# Mi Portafolio
+# Landing Page - CV :globe_with_meridians:
 
-## Secciones de mi sitio web
-1. Hero. 
-    * Foto, nombre, carrera y botón hacia contacto.
-2. Sobre mi. 
-    * Breve descripcion junto con mi CV
-    * Mis 10 habilidades principales
-3. Servicios.
-    * Frontend
-    * Backend
-    * Database
-4. Portafolio
-    * Proyecto Alitas
-    * Proyecto Johnnys
-    * Proyecto BienesRaices
-    * Proyecto Festival
-    * Proyecto Blog
-    * Proyecto BlackJack
-5. Formulario de Contacto
+## 1. Inicio
+* Hero
+    * Foto, nombre, carrera y botón hacia contacto
+
+## 2. Sobre mi
+* Descripción
+    * Texto y un btn hacia mi CV
+* Habilidades
+    * Iconos con lenguajes, librerias, frameworks, software, etc.
+    * Solo 10 iconos con los más importantes
+
+## 3. Servicios
+* Landing Page
+* One Page
+* Dinamyc Page
+
+## 4. Portafolio
+* Familia de Fe y Amistad
+* Alitas Legendarias
+* Johnnys F&M
+* Blog de Café
+* Bienes Raices
+* Festival
+
+## 5. Contacto
+* Formulario de contacto
